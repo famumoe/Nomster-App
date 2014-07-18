@@ -3,5 +3,5 @@ class Place < ActiveRecord::Base
  	geocoded_by :address 
  	after_validation :geocode
 
-	validates :address, :presence => true, :length => { :minimum => 3}
+	validates :name, :presence => true
 end
